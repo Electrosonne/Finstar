@@ -2,15 +2,15 @@
 2 Часть. SQL запросы:
 
 1. Написать запрос, который возвращает наименование клиентов и кол-во
-контактов клиентов.
-Select Name, count(ClientId)
-From Clients as cl
-Join Contacts as con
-on cl.Id = con.ClientId
-group by Name
+контактов клиентов.\n
+Select Name, count(ClientId)\n
+From Clients as cl\n
+Join Contacts as con\n
+on cl.Id = con.ClientId\n
+group by Name\n
 
 2. Написать запрос, который возвращает список клиентов, у которых есть более
-2 контактов.
-Select name
-From (1-ая задача) q
-Where count > 2
+2 контактов.\n
+Select name\n
+From (1-ая задача) q\n
+Where count > 2\n
